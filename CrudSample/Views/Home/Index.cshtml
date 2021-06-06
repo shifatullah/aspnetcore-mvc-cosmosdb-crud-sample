@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Welcome to CRUD Sample</h1>
+        <p>
+            Domonstration of create, read, update and delete records into Sqllite database using ASP.Net Core MVC framework and EF Core technologies.
+        </p>
+        <p><p><a class="btn btn-primary" role="button" href="https://github.com/shifatullah/aspnetcore-mvc-sqlite-crud-sample">View Source Code on GitHub &raquo;</a></p></p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Courses</h2>
+            <p>A simple object to store course information. It currently stores only name of the course.</p>
+            <p><a class="btn btn-secondary" role="button" asp-controller="Course">View Details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Teachers</h2>
+            <p>A simple object to store teacher information. It currently stores name of the teacher and selected single course.</p>
+            <p><a class="btn btn-secondary" role="button" asp-controller="Teacher">View Details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Students</h2>
+            <p>A simple object to store student information. It currently stores name of the student and selected courses.</p>
+            <p><a class="btn btn-secondary" role="button" asp-controller="Student">View Details &raquo;</a></p>
+        </div>
+    </div>
+</div>
